@@ -87,6 +87,8 @@ from efficientnet_pytorch import EfficientNet
 import warnings
 warnings.filterwarnings('ignore')
 !mkdir models
+
+#OUTPUT
 modules loaded
 Requirement already satisfied: efficientnet_pytorch in c:\users\korar\ravi\lib\site-packages (0.7.1)
 Requirement already satisfied: torch in c:\users\korar\ravi\lib\site-packages (from efficientnet_pytorch) (2.0.1)
@@ -115,7 +117,8 @@ image_df = image_df.sample(frac=1).reset_index(drop = True)
 ​
 # Show the result
 image_df.head(25)
-Filepath	Label
+#OUTPUT
+        Filepath	                                   Label
 0	C:\Users\korar\OneDrive\Desktop\BLINDNESS DETE...	No_DR
 1	C:\Users\korar\OneDrive\Desktop\BLINDNESS DETE...	Proliferate_DR
 2	C:\Users\korar\OneDrive\Desktop\BLINDNESS DETE...	No_DR
@@ -179,7 +182,6 @@ for ax in axes.flat:
 plt.tight_layout()
 plt.show()
 ​
-
 # Set a custom color palette
 colors = ['#FF6F61', '#6B5B95', '#88B04B', '#F7CAC9', '#92A8D1']
 sns.set_palette(sns.color_palette(colors))
